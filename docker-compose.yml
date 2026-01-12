@@ -6,9 +6,9 @@ services:
       context: ./image-cluster-ai-api
     container_name: api
     ports:
-      - "${API_HOST_PORT}:8000"
+      - "${API_HOST_PORT}:8001"
     environment:
-      - PORT=8000
+      - PORT=8001
     restart: unless-stopped
 
   web:
